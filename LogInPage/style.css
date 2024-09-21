@@ -1,0 +1,149 @@
+:root{
+    font-family: "Open Sans", sans-serif;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.box{
+    margin-top: 30px;
+    
+    width: 350px;
+    height: 800px;
+    padding: 5px;
+}    
+.btn{
+    width: 250px;
+    height: 34px;
+    border-radius: 60px;
+    outline: none;
+    
+    border: none;
+
+}
+#login{
+    color: rgb(0, 0, 0);
+    background-color:hsl(120, 80%, 55%);
+    font-weight: 800;
+    font-size: 12px;
+
+}
+
+.design{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+   align-items: center;
+    justify-content: center;
+}
+.design hr{
+    width: 40%;
+    border-top: 1px solid;
+
+}
+.design p{
+    padding: 3px;
+    font-size: 70%;
+    font-weight: bold;
+
+}
+img{
+    margin-bottom: 15px;
+    width: 70px;
+}
+h1{
+    margin-bottom: 10px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 280%;
+    flex-direction: column;
+}
+h6{
+    margin-top: 20px;
+    margin-bottom: 9px;
+    font-size: 13px;
+
+}
+
+form{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+form input[type="text"], input[type="password"], input[type="date"]{
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 18px;
+}
+
+
+form input[type="date"]{
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 5px;
+    
+} 
+
+form input[type="radio"]{
+    margin-right: 2px ;
+}
+.gender label{
+    font-size: 85%;
+    margin-right: 13px;
+}
+.gender{
+    padding-right: 60px;
+    margin-bottom: 7px;
+     
+}
+.extra {
+    padding: 10px;
+    margin-right: 18px;
+    color: hsl(0, 0%, 40%);
+    font-size: 70%;
+    
+}
+.extra input[type="checkbox"]{
+    margin-right: 4px;
+    margin-bottom: 2px;
+}
+.info1{
+    margin-top: 15px;
+}
+.infor{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 8px;
+    font-size: 60%;
+}
+.infor a{
+    text-decoration: none;
+    color: hsl(120, 80%, 55%);
+    font-weight: bold;
+}
+.info{
+
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.signup{
+    margin-top: 30px;
+    margin-bottom: 150px;
+    color: whitesmoke;
+    background-color: hsl(120, 80%, 55%);
+    font-weight: 1000;
+}

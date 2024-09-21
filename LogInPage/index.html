@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <h1><img src="spotify.png" alt="icon">Sign up to start listening</h1>        <hr>
+        <h6>Already have an account?</h6>
+        <button class="btn" id="login">LOG IN</button>
+        <div class="design">
+            <hr>
+            <p>or</p>
+            <hr>
+        </div>
+        <p style="font-size: 13px;"><b>Sign up with your email address</b></p>
+        <form>
+            <input type="text" name="email" id="email" placeholder="Email">
+            <input type="text" name="email" id="email" placeholder="Confirm email">
+            <input type="password" placeholder="Password" name="password" id="password">
+            <input type="text" placeholder="What should we call you?" id="name">
+            
+            <label style="font-size: 13px;" for="date"><p style="padding-right: 220px;">Date of birth:</p>
+                <input type="date" name="date" id="date">
+            </label>
+            <br>
+            <div class="gender">
+                <label><input type="radio" name="gender" class="gender">Male</label>
+                <label><input type="radio" name="gender" class="gender">Female</label>
+                <label><input type="radio" name="gender" class="gender">Non-binary</label>
+            </div>
+
+            <h5 class="extra"><input type="checkbox" name="info">Share my registration data with Spotify's content provider for marketing purposes.</h5>
+
+            <p class="infor info1">By clicking on Sign Up, you agree Spotify's <a href="#">Terms and Conditions of Use.</a></p>
+            <p class="infor info"class="infor">To learn more about how Spotify collects, uses, shares and protects your personal data please read Spotify's <a href="#">Privacy Policy.</a></p>
+            <button class="btn signup" >SIGN UP</button>
+        </form>
+    </div>
+
+
+    
+</body>
+</html>
