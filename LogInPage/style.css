@@ -32,10 +32,14 @@ body{
 }
 #login{
     color: rgb(0, 0, 0);
-    background-color:hsl(120, 80%, 55%);
+    background-color:hsl(120, 80%, 55%);;
     font-weight: 800;
     font-size: 12px;
 
+}
+#login:hover{
+    background-color: hsl(120, 90%, 53%);
+    
 }
 
 .design{
@@ -58,7 +62,7 @@ body{
 }
 img{
     margin-bottom: 15px;
-    width: 70px;
+    width: 85px;
 }
 h1{
     margin-bottom: 10px;
@@ -106,6 +110,7 @@ form input[type="radio"]{
 .gender{
     padding-right: 60px;
     margin-bottom: 7px;
+    margin-top: 3px ;
      
 }
 .extra {
@@ -146,4 +151,7 @@ form input[type="radio"]{
     color: whitesmoke;
     background-color: hsl(120, 80%, 55%);
     font-weight: 1000;
+}
+.signup:hover{
+    background-color: hsl(120, 73%, 47%);
 }
