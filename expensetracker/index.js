@@ -58,25 +58,25 @@ addbtn.onclick = function(){
 
 
 
-        sel_option.textContent = info1
-        new_amt.textContent = `$${info2}`
-        new_date.textContent = info3
+        sel_option.textContent = info1;
+        new_amt.textContent = `$${info2}`;
+        new_date.textContent = info3;
 
         let div = document.createElement('div')
-        div.appendChild(sel_option)
-        div.appendChild(new_amt)
-        div.appendChild(new_date)
-        delbtn.appendChild(img)
-        div.appendChild(delbtn)
-        money.push(info2)
+        div.appendChild(sel_option);
+        div.appendChild(new_amt);
+        div.appendChild(new_date);
+        delbtn.appendChild(img);
+        div.appendChild(delbtn);
+        money.push(info2);
         
-        let sum = 0
-        for(let i = 0; i < money.length; i++){
-            sum += money[i]
-            total.style.display = 'block'
-            total.innerHTML = `Total Amount: <b>$${sum}</b>`
+        let sum = 0;
+        for(let i=0; i < money.length; i++){
+            sum += money[i];
+            total.textContent = `Total Amount: $${sum}`;
+            total.style.display = 'block';
         }
-        console.log(sum)
+        
 
         box2.appendChild(div)
         
@@ -86,6 +86,11 @@ addbtn.onclick = function(){
 
         delbtn.onclick = function () {
             box2.removeChild(div)
+            for (let i = 0; i < money.length; i++) {
+                let minus = sum - money[i];
+                total.textContent = `Total Amount: $${minus}`;
+                total.style.display = 'block';
+            }
         }
     }
     
