@@ -33,6 +33,7 @@ let amount = document.getElementById("amount")
 let date = document.getElementById("date")
 let total = document.getElementById("total")
 let money = []
+let total1 = 0;
 
 addbtn.onclick = function(){
     let info1 = option.value
@@ -59,7 +60,7 @@ addbtn.onclick = function(){
 
 
         sel_option.textContent = info1;
-        new_amt.textContent = `$${info2}`;
+        new_amt.textContent = `$${info2.toLocaleString("en-US") }`;
         new_date.textContent = info3;
 
         let div = document.createElement('div')
@@ -70,11 +71,13 @@ addbtn.onclick = function(){
         div.appendChild(delbtn);
         money.push(info2);
         
-        let sum = 0;
+        
         for(let i=0; i < money.length; i++){
-            sum += money[i];
+            let sum = total1 + money[i]
+            
             total.textContent = `Total Amount: $${sum}`;
             total.style.display = 'block';
+            console.log(money[i])
         }
         
 
@@ -87,7 +90,8 @@ addbtn.onclick = function(){
         delbtn.onclick = function () {
             box2.removeChild(div)
             for (let i = 0; i < money.length; i++) {
-                let minus = sum - money[i];
+                let minus = total1 - money[i];
+
                 total.textContent = `Total Amount: $${minus}`;
                 total.style.display = 'block';
             }

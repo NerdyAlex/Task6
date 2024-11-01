@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Titillium Web", sans-serif;
+}
+.home{
+    background: linear-gradient(hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 0%, 0.4)),
+    url("images/bgc.png");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    width: 100%;
+}
+nav h1{
+    color: white;
+    font-size: 1.5rem;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    align-items: center;
+    position: relative;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li::after{
+    content: "";
+    width: 0%;
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+    background: hsl(45, 85%, 50%);
+    height: 2px;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+
+nav select{
+    width: 4rem;
+    height: 2rem;
+    border-radius: 5px;
+}
+nav select option{
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+    margin: 2rem auto;
+    gap: 2rem;
+    height: 70vh;
+    
+}
+.box{
+    flex-basis: 50%;
+    color: white;
+    padding: 0.7rem;
+    height: 100%;
+    
+}
+
+.hero h1{
+    font-size: 5rem;
+    transition: 0.5s;
+    padding-bottom: 3rem;
+}
+.hero h1:hover{
+    color: hsl(45, 85%, 50%)
+}
+
+.lisiting{
+    width: 80%;
+    background: rgba(0, 0, 0, 0.678);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+.searchbar{
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 1024px){
+    p{
+        font-size: 0.95rem;
+    }
+    nav{
+        padding: 1.2rem 1.7rem;
+    }
+    nav ul li{
+        font-size: 0.78rem;
+        font-weight: bold;
+    }
+    .container{
+        padding-top: 2rem;       
+    }
+    .hero h1{
+        font-size: 3rem;
+        padding-bottom: 1.5rem;
+    }
+    
+}
