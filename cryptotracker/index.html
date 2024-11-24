@@ -10,22 +10,28 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
+
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <section class="home">
         <nav>
             <h1>BiSea</h1>
-            <ul>
+            <ul id="menu">
+                
                 <li><a href="">HOME</a></li>
                 <li><a href="">LISTINGS</a></li>
                 <li><a href="">CONTACT</a></li>
             </ul>
-
+            <i class="fa-regular fa-circle-xmark" style="display: none;" id="close"></i>
+            <i id="open" class="fa-solid fa-ellipsis"></i>
             <select id="currency">
                 <option value="USD">USD</option>
                 <option value="USD">EUR</option>
                 <option value="USD">YEN</option>
             </select>
+            
         </nav>
 
         <div class="container">
@@ -39,13 +45,26 @@
                 </p>
             </section>
 
-            <section class="box lisiting">
+            <section class="box listing" >
                 <div class="searchbar">
                     <input id="search" type="text" placeholder="What're you lookin for?">
-                    <button>Search</button>
+                    <button id="searchbtn">Search</button>
                 </div>
+                <!-- <div>
+                    <div>
+                        <p><img src="images/coin.png">BTC</p>
+                        <p>$100000</p>
+                        <p>bad</p>
+                        <p>$100000000</p>
+                    </div>
+                    
+                </div> -->
+                
             </section>
         </div>
     </section>
+
+
+    <script src="index.js"></script>
 </body>
 </html>

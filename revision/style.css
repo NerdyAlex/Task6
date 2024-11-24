@@ -1,0 +1,26 @@
+/* .box1{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    background-color: lightblue;
+}*/
+#btn{
+    margin-bottom: 1.5rem;
+}
+.box2 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    background-color:rgb(250, 96, 96);
+    position: relative;
+    
+    
+
+} 
+/* #img1{
+    width: 60%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    
+    
+} */
